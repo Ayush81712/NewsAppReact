@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			background: #151418;
+			margin: 0;padding: 0;box-sizing: border-box;
+		}
+		.loading-wrapping
+		{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			align-self: center;
+
+		}
+		.bar
+		{
+			display: block;
+			height: 50px;
+			width: 10px;
+			background: #ffffff;
+			margin-right: 20px;
+			animation: scale 1600ms ease-in-out infinite;
+			animation-delay: 100ms;
+			transform-origin: 50% 50%;
+			box-shadow: 2px 2px 10px #3ff9dc;
+			border-radius: 8px;
+		}
+		.bar.two{
+			animation-delay: 400ms;
+		}
+		.bar.three{
+			animation-delay: 700ms;
+		}
+		@keyframes scale {
+			0%{
+				transform: scale(1);
+			}
+			50%
+			{
+				transform: scale(1.7);
+			}
+			100%
+			{
+				transform: scale(1);
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<!-- <h1>DHEERAJ SHARAMA</h1> -->
+	<div class="loading-wrapping">
+		<div class="bar one"></div>	
+		<div class="bar two"></div>
+		<div class="bar three"></div>
+	</div>
+	
+</body>
+</html>
